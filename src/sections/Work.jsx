@@ -22,19 +22,19 @@ export default function Work() {
       delayClass: "delay-150",
     },
     {
-      title: "Aeron AR Helmet Interface Design",
-      description: "Problem: High-speed motorcyclists face dangerous cognitive overload when checking physical mirrors or traditional GPS screens, leading to split-second distractions.",
-      image: work3Img,
-      slug: "ar-helmet-design",
-      externalLink: "https://www.behance.net/gallery/224576421/A-Smart-AR-Helmet-(UIUX-case-study)",
-      delayClass: "delay-200",
-    },
-    {
       title: "GoPay Seamless Transaction Experience",
       description: "Problem: The existing payment flow suffers from high friction during the transition from physical cash to digital credit, causing drop-offs at the point of sale.",
       image: work2Img,
       slug: "gopay-redesign",
       externalLink: "https://www.behance.net/gallery/224576511/Cash-to-GoPay-(Redesign-of-GoPay)",
+      delayClass: "delay-200",
+    },
+    {
+      title: "Aeron AR Helmet Interface Design",
+      description: "Problem: High-speed motorcyclists face dangerous cognitive overload when checking physical mirrors or traditional GPS screens, leading to split-second distractions.",
+      image: work3Img,
+      slug: "ar-helmet-design",
+      externalLink: "https://www.behance.net/gallery/224576421/A-Smart-AR-Helmet-(UIUX-case-study)",
       delayClass: "delay-300",
     }
   ];
