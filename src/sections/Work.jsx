@@ -2,6 +2,7 @@ import ProjectCard from '../components/ProjectCard'
 import work1Img from '../assets/Work1.png'
 import work2Img from '../assets/work2.png'
 import work3Img from '../assets/work3.png'
+import defineApiImg from '../assets/Define API Test Logic.png'
 
 export default function Work() {
   const projects = [
@@ -13,19 +14,27 @@ export default function Work() {
       delayClass: "delay-100",
     },
     {
-      title: "GoPay Cash-In Experience Redesign",
-      description: "The current cash-to-digital deposit flow is fragmented and time-consuming, requiring users to navigate multiple physical touchpoints and complex digital menus, which leads to high drop-off rates for unbanked users.",
-      image: work2Img,
-      slug: "gopay-redesign",
-      externalLink: "https://www.behance.net/gallery/224576511/Cash-to-GoPay-(Redesign-of-GoPay)",
-      delayClass: "delay-200",
+      title: "Redesigning Test Case Creation in Bugasura",
+      description: "Problem: Creating test cases is slow and confusing due to mixed workflows, excessive fields, and lack of a guided flow.",
+      image: defineApiImg,
+      slug: "bugasura-case-study",
+      customPath: "/case-study-1/bugasura-case-study",
+      delayClass: "delay-150",
     },
     {
-      title: "Smart AR Helmet Interface Design",
-      description: "Problem: Motorcyclists face high safety risks due to \"split-attention effect,\" where looking down at physical clusters or handlebar-mounted phones for navigation takes their eyes off the road for an average of 2–5 seconds per glance.",
+      title: "Aeron AR Helmet Interface Design",
+      description: "Problem: High-speed motorcyclists face dangerous cognitive overload when checking physical mirrors or traditional GPS screens, leading to split-second distractions.",
       image: work3Img,
       slug: "ar-helmet-design",
       externalLink: "https://www.behance.net/gallery/224576421/A-Smart-AR-Helmet-(UIUX-case-study)",
+      delayClass: "delay-200",
+    },
+    {
+      title: "GoPay Seamless Transaction Experience",
+      description: "Problem: The existing payment flow suffers from high friction during the transition from physical cash to digital credit, causing drop-offs at the point of sale.",
+      image: work2Img,
+      slug: "gopay-redesign",
+      externalLink: "https://www.behance.net/gallery/224576511/Cash-to-GoPay-(Redesign-of-GoPay)",
       delayClass: "delay-300",
     }
   ];
@@ -49,6 +58,7 @@ export default function Work() {
               slug={proj.slug}
               delayClass={proj.delayClass}
               externalLink={proj.externalLink}
+              customPath={proj.customPath}
             />
           ))}
         </div>

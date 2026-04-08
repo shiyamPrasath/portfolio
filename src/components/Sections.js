@@ -24,3 +24,21 @@ export const SECTION_CONTENT = [
   { id: 'sec-09', title: '07. Key Screens Explanation', content: '' },
   { id: 'sec-10', title: '08. Impact & Learning', content: '' },
 ];
+
+export const BUGASURA_NAV_GROUPS = [
+  { id: 'problem', title: 'Problem', subtitle: 'Understanding workflow\nfriction', sections: ['sec-01'] },
+  { id: 'strategy', title: 'Strategy', subtitle: 'Redefining the\ncreation flow', sections: ['sec-02', 'sec-03'] },
+  { id: 'execution', title: 'Execution', subtitle: 'Designing key\ninteractions', sections: ['sec-04', 'sec-05'] },
+  { id: 'outcome', title: 'Outcome', subtitle: 'Measuring improvements\nand trade-offs', sections: ['sec-06', 'sec-07', 'sec-08'] }
+];
+
+export const BUGASURA_SECTION_CONTENT = [
+  { id: 'sec-01', title: '01. Problem Framing', content: 'Engineers and testers interact with the test case creation popup daily. Re-designing this flow reduces cognitive load and allows the engineering teams to create, organize, and execute test cases efficiently.' },
+  { id: 'sec-02', title: '02. Design Goals', content: 'Modernize the test case ingestion by separating functional from API logic, optimizing the progression, and improving visual clarity.' },
+  { id: 'sec-03', title: '03. User Flow', content: 'Breaking the massive form down into a structured 3-step wizard (Details, Steps, Finish). Providing a clear linear process focused on immediate context instead of overwhelming users upfront.' },
+  { id: 'sec-04', title: '04. Key Interaction Decisions', content: 'Minimizing manual entry, preventing unnecessary API configuration on UI tests, and making test states unambiguous across all device footprints.' },
+  { id: 'sec-05', title: '05. Final Screens', content: 'The finalized high-fidelity interface with a focus on simple step-by-step conditional rendering for complex QA pathways.' },
+  { id: 'sec-06', title: '06. Trade-offs & Constraints', content: 'Balancing technical limitations, handling edge cases gracefully, and prioritizing reducing effort over visual flair.' },
+  { id: 'sec-07', title: '07. Impact & Outcomes', content: 'Achieved a massive reduction in test creation time and boosted data entry accuracy.' },
+  { id: 'sec-08', title: '08. Future Opportunities', content: 'Next steps include deeper automation, template management, and AI-assisted scenario generation.' }
+];

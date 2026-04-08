@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-export default function ProjectCard({ title, description, image, slug, delayClass, externalLink }) {
+export default function ProjectCard({ title, description, image, slug, delayClass, externalLink, customPath }) {
   const cardContent = (
     <>
       <div className="aspect-[4/3] w-full overflow-hidden bg-gray-100 relative">
@@ -31,8 +31,10 @@ export default function ProjectCard({ title, description, image, slug, delayClas
     );
   }
 
+  const linkPath = customPath || `/case-study/${slug}`;
+
   return (
-    <Link to={`/case-study/${slug}`} className={className}>
+    <Link to={linkPath} className={className}>
       {cardContent}
     </Link>
   );
